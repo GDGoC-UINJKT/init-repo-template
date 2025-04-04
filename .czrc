@@ -28,7 +28,7 @@
     { "name": "database-config", "description": "Database configuration" },
     { "name": "eslint", "description": "ESLint configuration" },
     { "name": "babel", "description": "Babel configuration" },
-    { "name": "webpack", "description": "Webpack configuration" }
+    { "name": "webpack", "description": "Webpack configuration" },
     { "name": "collaboration", "description": "Management collaboration resource" }
   ],
   "types": [
