@@ -2,6 +2,8 @@
 
 A complete, professional, and opinionated GitHub repository template designed to boost **consistency**, enhance **collaboration**, and support **scalable open-source** or private projects.
 
+[A detailed discussion on CZ](https://dev.to/oskhar/commitizen-making-git-commits-the-right-way-g70)
+
 > 📦 Ready-to-clone setup for teams who care about quality, clarity, and developer experience.
 
 ## 🔥 Why use `init-repo-template`?
