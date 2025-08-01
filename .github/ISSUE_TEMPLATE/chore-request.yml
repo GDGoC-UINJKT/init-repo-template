@@ -1,0 +1,38 @@
+name: 🟣 Chore Request
+description: Request a maintenance task, build process update, or other non-functional change.
+title: "🟣 [Chore] <task_description>"
+labels: ["type:chore"]
+assignees:
+  - oskhar
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for internal maintenance tasks.
+
+  - type: textarea
+    id: task-description
+    attributes:
+      label: Task Description
+      description: "Clearly describe the maintenance task that needs to be done and why it's necessary."
+      placeholder: "e.g., Update all `devDependencies` to their latest stable versions to ensure security and compatibility."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria (Optional)
+      description: "How do we know when this task is complete?"
+      placeholder: "e.g., All packages are updated, and the CI build passes successfully."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to abide by the project's [Code of Conduct](https://github.com/oskhar/init-repo-template/blob/master/code_of_conduct.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct.
+          required: true
