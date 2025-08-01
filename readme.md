@@ -30,6 +30,8 @@ This repo is for you.
 - 📝 Semantic versioning & commit conventions (Conventional Commits)
 - 🛠️ GitHub-friendly structure with `.github` support
 - ⚡ Clean and modular template to scale with your team
+- 📖 Documentation and changelogs
+- 📦 NPM package support
 
 ## 🧑‍💻 Getting Started
 

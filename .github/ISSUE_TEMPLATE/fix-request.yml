@@ -1,6 +1,6 @@
-name: 🔴 Bug Report
-description: Report any bugs you encounter.
-title: "🔴 [Bug] Issue with <feature>: <brief description>"
+name: 🔴 Fix Request
+description: Report any bugs and error you encounter.
+title: "🔴 [Error] Issue with <feature>: <brief description>"
 labels: ["type:bug"]
 assignees:
   - oskhar
@@ -35,7 +35,7 @@ body:
       description: Describe the steps to reproduce the bug.
       placeholder: Detailed steps to reproduce the bug.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: expected-result
@@ -44,7 +44,7 @@ body:
       description: What did you expect to happen?
       placeholder: Describe the expected outcome.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: actual-result
@@ -53,7 +53,7 @@ body:
       description: What actually happened?
       placeholder: Describe the actual outcome.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: environment
@@ -62,7 +62,7 @@ body:
       description: Provide details about your environment, including software version, OS, browser, and device used.
       placeholder: Software version, OS, browser, etc.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: logs

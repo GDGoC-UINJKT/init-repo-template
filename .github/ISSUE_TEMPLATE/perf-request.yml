@@ -1,0 +1,38 @@
+name: 🟣 Performance Request
+description: Report a performance issue or suggest an improvement.
+title: "🟣 [Perf] <area_to_improve>: <brief_description>"
+labels: ["type:performance"]
+assignees:
+  - oskhar
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve our performance! Please describe the issue clearly.
+
+  - type: textarea
+    id: perf-issue-description
+    attributes:
+      label: Performance Issue Description
+      description: "What part of the application is slow or could be optimized? How can we reproduce it?"
+      placeholder: "e.g., The user dashboard takes over 5 seconds to load when there are more than 100 items."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-outcome
+    attributes:
+      label: Expected Outcome
+      description: "What is the desired performance improvement after this change?"
+      placeholder: "e.g., The dashboard should load in under 2 seconds."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to abide by the project's [Code of Conduct](https://github.com/oskhar/init-repo-template/blob/master/code_of_conduct.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct.
+          required: true
