@@ -2,7 +2,7 @@
 
 ---
 
-## 📋 Changelog dari Commit
+## 📋 List Perubahan
 
 (Tempel hasil log commit Anda di sini)
 

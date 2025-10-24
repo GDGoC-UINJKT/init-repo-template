@@ -1,4 +1,4 @@
-name: "Lint PR Title"
+name: "PR Title Validator"
 
 on:
   pull_request_target:
@@ -11,24 +11,76 @@ jobs:
   validate-title:
     name: Validate PR Title
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
     steps:
       - name: Check PR Title
         uses: amannn/action-semantic-pull-request@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          # Konfigurasi tipe yang diizinkan (sesuaikan dengan kebutuhan tim)
           types: |
             feat
             fix
             docs
             style
             refactor
-            perf
             test
-            build
-            ci
             chore
+            perf
+            deps
+            security
+            remove
+            comments
+            error
+            ux
+            config
+            files
+            merge
             revert
-          # Izinkan scope dalam tanda kurung
-          allow_scope: true
+            init
+
+          scopes: |
+            auth
+            authentication
+            authorization
+            ui
+            api
+            config
+            utils
+            header
+            footer
+            sidebar
+            modal
+            search
+            payment
+            user-management
+            data-processing
+            logging
+            unit-tests
+            integration-tests
+            e2e-tests
+            onboarding
+            checkout
+            user-profile
+            deployment
+            server-config
+            database-config
+            eslint
+            babel
+            webpack
+            module
+            service
+            interceptor
+            provider
+            middleware
+            filter
+            pipe
+            resolver
+            guard
+            decorator
+            library
+            websocket
+            collaboration
+
+          requireScope: false

@@ -1,0 +1,47 @@
+name: 🟣 Refactor Request
+description: Suggest a code refactoring to improve maintainability or structure.
+title: "🟣 [Refactor] <component_or_area>: <reason_for_refactor>"
+labels: ["type:refactor"]
+assignees:
+  - oskhar
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement to our codebase!
+
+  - type: textarea
+    id: code-to-refactor
+    attributes:
+      label: Code to be Refactored
+      description: "Which part of the code needs refactoring? Please provide file names or code snippets."
+      placeholder: "e.g., The `calculateTotal` function in `src/utils/pricing.js` is too complex and hard to read."
+    validations:
+      required: true
+
+  - type: textarea
+    id: refactor-reason
+    attributes:
+      label: Reason for Refactoring
+      description: "Why is this refactor necessary? (e.g., improve readability, reduce complexity, remove tech debt)."
+      placeholder: "This will make the code easier to test and maintain in the future."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-implementation
+    attributes:
+      label: Suggested Implementation (Optional)
+      description: "Do you have an idea of how to implement this refactor?"
+      placeholder: "e.g., We could split the function into smaller, single-responsibility functions."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to abide by the project's [Code of Conduct](https://github.com/oskhar/init-repo-template/blob/master/code_of_conduct.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct.
+          required: true

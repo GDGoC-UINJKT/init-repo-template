@@ -26,7 +26,7 @@ body:
       description: Explain how this feature will help users or improve the experience.
       placeholder: Describe the benefits users will gain.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: alternatives
