@@ -1,118 +1,94 @@
 # 🚀 init-repo-template
 
-A complete, professional, and opinionated GitHub repository template designed to boost **consistency**, enhance **collaboration**, and support **scalable open-source** or private projects.
+A professional and opinionated GitHub repository template to improve **consistency**, **collaboration**, and long-term maintainability for open-source or private projects.
 
-[A detailed discussion on CZ](https://dev.to/oskhar/commitizen-making-git-commits-the-right-way-g70)
+> 📦 Ready-to-clone setup for teams who care about clean Git history and a clear collaboration flow.
 
-> 📦 Ready-to-clone setup for teams who care about quality, clarity, and developer experience.
+Related article:
+[https://dev.to/oskhar/commitizen-making-git-commits-the-right-way-g70](https://dev.to/oskhar/commitizen-making-git-commits-the-right-way-g70)
 
-## 🔥 Why use `init-repo-template`?
+## Why this template?
 
-If you're tired of:
+This template helps you avoid:
 
-- inconsistent commit messages,
-- undocumented contribution flow,
-- messy collaboration practices,
-- or setting up the same configs over and over again...
+- inconsistent commit messages
+- unclear contribution rules
+- repetitive repo setup across projects
 
-This repo is for you.
+It’s designed to be **reusable**, **team-friendly**, and **tool-agnostic** (not tied to Node.js projects).
 
-✅ **Built to be reused** — Just clone, customize, and start coding.
+## What’s included ✨
 
-✅ **Optimized for collaboration** — Complete with interactive commit flow via Commitizen and a powerful `collaboration_guide.md`.
+- `.czrc` for Commitizen-based interactive commits
+- Conventional Commits & semantic versioning support
+- Clear collaboration rules in `collaboration_guide.md`
+- GitHub-ready structure (`.github`, docs-friendly layout)
 
-✅ **Zero Node.js dependency requirement** — Works well even if your project isn’t JavaScript-based.
+## Getting started
 
-## ✨ Features
-
-- 📄 Predefined `.czrc` for consistent commit messages via Commitizen
-- 🧭 Clear [Collaboration Guide](collaboration_guide.md)
-- 📝 Semantic versioning & commit conventions (Conventional Commits)
-- 🛠️ GitHub-friendly structure with `.github` support
-- ⚡ Clean and modular template to scale with your team
-
-## 🧑‍💻 Getting Started
-
-### 1. Clone this template
+### 1. Clone the template
 
 ```bash
 git clone https://github.com/your-username/init-repo-template.git your-project-name
 cd your-project-name
 ```
 
-### 2. Configure Git & Collaboration Tools
+### 2. Read the collaboration guide
 
-- Make sure you read the [📘 `collaboration_guide.md`](collaboration_guide.md).
-- It includes how to:
-  - Set up and use Commitizen with `.czrc`
-  - Follow the branching and PR workflow
-  - Keep documentation and changelogs clean
+Before committing anything, read:
 
-### 3. Initialize your repo
+- `collaboration_guide.md`
+
+It explains commit rules, branching, PR flow, and review etiquette.
+
+### 3. Initialize your repository
 
 ```bash
 git init
 git remote add origin <your-new-repo-url>
-npm install -g commitizen cz-git  # or cz-conventional-changelog if preferred
+npm install -g commitizen cz-git
 ```
 
-> 💡 Already includes `.czrc` — you're ready to use `git cz` right away.
+> 💡 `.czrc` is already included — you can use `git cz` immediately.
 
-## 🧠 What is `.czrc`?
+## Commit workflow 🧠
 
-`.czrc` is a configuration file for [Commitizen](https://commitizen-tools.github.io/commitizen/). It defines how commit messages are written and which adapter to use.
+This template uses **Commitizen** to keep commit messages consistent and meaningful.
 
-We use it to:
-
-- Maintain a **clean Git history**
-- Enable **automated changelog generation**
-- Improve **team communication** via clear commits
-
-To commit using Commitizen:
+To commit:
 
 ```bash
 git add .
 git cz
 ```
 
-And follow the interactive prompt.
+Follow the interactive prompt and let the tool guide you.
 
-## 🤝 How to Collaborate
+## Collaboration rules 🤝
 
-Please **always refer to** [`collaboration_guide.md`](collaboration_guide.md) before pushing or opening a pull request. It explains:
+- Do not commit directly to `main` (except initial setup)
+- Always follow the commit convention
+- Open pull requests with clear intent and scope
 
-- How we write commits
-- How to open PRs
-- Branch naming
-- Code review etiquette
+All details are documented in `collaboration_guide.md`.
 
-> ⛔ Don't commit directly to `main` unless you're doing initial setup.
+## Suitable for
 
-## 💡 Recommended Use Cases
+- Open-source repositories
+- Internal company projects
+- Monorepo bootstrapping
+- Teams learning proper Git practices
 
-- Open-source project templates
-- Internal company repositories
-- Bootstrapping monorepos
-- Teaching good Git practices to teams
+## License
 
-## 🔍 SEO Tags & Keywords
+MIT — free to use, modify, and adapt.
 
-> _init repo template_, _github repo starter_, _professional collaboration guide_, _conventional commit template_, _czrc guide without nodejs_, _interactive git commit convention_, _developer friendly repo structure_, _semantic commit bootstrap_
+## Tip 🧩
 
-## 📬 Questions or Feedback?
-
-Feel free to open an issue or start a discussion. This template evolves as more teams and individuals use it. Contributions are welcome!
-
-## 🪪 License
-
-MIT — use it freely, modify it proudly.
-
-## 🧩 Tip
-
-Want to see it in action? Clone this template into your own repo and make your first contribution using:
+Clone this template and make your first commit with:
 
 ```bash
 git cz
 ```
 
-You'll **feel the difference** in how structured and efficient your repo becomes 💡
+You’ll immediately notice a cleaner, more structured workflow.
